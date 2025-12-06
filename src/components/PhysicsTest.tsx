@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect, useRef } from 'react';
 import { Engine, Render, World, Bodies, Runner } from 'matter-js';
 
