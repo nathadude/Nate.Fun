@@ -1,4 +1,5 @@
 import Image from "next/image";
+import PhysicsTest from '@/components/PhysicsTest'; // Adjust path if needed
 
 export default function Home() {
   return (
@@ -8,13 +9,18 @@ export default function Home() {
         
         {/* GRID ITEM 1: Rectangular Aspect Ratio */}
         <div className="relative aspect-video">
-            <div className="absolute inset-0 bg-gray-200 dark:bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow cursor-pointer">
-                <h2 className="text-xl font-semibold mb-2">1. Sentiment Physics</h2>
-                <p className="text-gray-700 dark:text-gray-300">
-                    Physics-block style toy where words have physical weight/interaction based on emotion.
-                </p>
-            </div>
+    <div className="absolute inset-0 bg-gray-200 dark:bg-gray-800 p-0 rounded-lg shadow-xl hover:shadow-2xl transition-shadow cursor-pointer overflow-hidden">
+
+        {/* INJECT THE TEST COMPONENT HERE */}
+        <PhysicsTest /> 
+
+        {/* Overlay the title outside the canvas area for clarity */}
+        <div className="absolute top-2 left-4">
+            <h2 className="text-xl font-semibold text-black dark:text-white">1. Physics Test</h2>
         </div>
+
+    </div>
+</div>
 
         {/* GRID ITEM 2: Rectangular Aspect Ratio */}
         <div className="relative aspect-video">
