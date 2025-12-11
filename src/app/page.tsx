@@ -1,7 +1,18 @@
 import Image from "next/image";
+import React, { useState } from 'react';
+import SentimentInput from '@/components/SentimentInput';
 import PhysicsTest from '@/components/PhysicsTest'; // Adjust path if needed
 
 export default function Home() {
+    const [wordDataList, setWordDataList] = useState<any[]>([]); // We'll manage all words here
+
+    const handleNewWord = (newWord: any) => {
+        // For now, let's just log the results to the console!
+        console.log("New Word Analyzed:", newWord);
+
+        // In the next task, we will update the state with this:
+        // setWordDataList(prev => [...prev, newWord]);
+    };
   return (
     <main className="min-h-screen p-8">
     {/* GRID CONTAINER: Now supports 1, 2, or 3 columns */}
