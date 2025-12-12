@@ -24,8 +24,8 @@ const SentimentInput: React.FC<SentimentInputProps> = ({ onWordAnalyzed }) => {
 
         // 1. Perform Sentiment Analysis
         const analyzer = new sentiment(); // Create an instance
-const result = analyzer.analyze(text); // Call the analyze method on the instance
-const score = result.score;
+        const result = analyzer.analyze(text); // Call the analyze method on the instance
+        const score = result.score;
         
         // 2. Determine Sentiment Category
         let sentimentCategory: WordData['sentiment'];
