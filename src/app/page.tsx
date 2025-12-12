@@ -54,11 +54,11 @@ export default function Home() {
                     href="/nurture-net"
                 />
 
-                {/* 3. Beat the ATS */}
+                {/* 3. ResuMaze */}
                 <ProjectTile
-                    title="3. Beat the ATS (The Maze)"
+                    title="3. ResuMaze"
                     description="A stealth game demonstrating A* pathfinding algorithms and object collision avoidance. (Game Design)"
-                    href="/beat-the-ats"
+                    href="/resumaze"
                 />
 
                 {/* 4. The Hallucination Slider */}
@@ -86,6 +86,6 @@ export default function Home() {
 // Ensure the necessary component is created for NurtureNet (placeholder)
 // You would also need to create placeholder directories for the other three projects:
 // /src/app/nurture-net/page.tsx
-// /src/app/beat-the-ats/page.tsx
+// /src/app/resumaze/page.tsx
 // /src/app/hallucination-slider/page.tsx
 // /src/app/prompt-platformer/page.tsx
